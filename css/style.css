@@ -183,10 +183,62 @@ a {
   padding: 7px 7px 7px 7px;
 }
 
+.colection-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+
 .colection-container img {
   width: 250px;
-  transition: width 0.9s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
+.colection-container:hover img {
+  transform: scale(1.2);
+  filter: blur(0.2px);
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: 5% auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.5em;
+  /* font-weight: bold; */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.colection-container:hover .overlay-text {
+  opacity: 1;
+}
+
 
 /* =========contact============== */
 .contact {
@@ -268,6 +320,9 @@ form button:hover {
   border-bottom: 1px solid;
   font-size: 20px;
 }
+.input-group input, .input-group textarea{
+  color: #03001c;
+}
 .input-group input:focus {
   border-bottom: 2px solid #ffc108;
 }
@@ -321,6 +376,9 @@ form button:hover {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .header h1{
+    padding: 0;
+  }
 
   .list-item-bar {
     padding: 7px 10px;
@@ -328,6 +386,9 @@ form button:hover {
 
   .home {
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .home-right img {
