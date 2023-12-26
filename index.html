@@ -113,194 +113,158 @@
         <h1>- - COLECTION - -</h1>
         <article class="colection-article">
           <aside class="colection-lyout">
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/1-Dasar Pemrograman Pengembang Software-Dicoding.jpg"
-                  alt="pengembang software"
-                />
+                  alt="pengembang software"/>
+                <div class="overlay-text">click</div>
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/2-Dasar managemen proyek.jpg"
-                  alt="managemen proyek"
-                />
+                  alt="managemen proyek"/>
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/3-Intro Software Engginer RevoU.jpg"
                   alt="Intro software Engginer"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/4-Introduction To React Js.jpg"
                   alt="React js"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/5-DSF-18 Fron end Developer-Dibimbing.jpg"
                   alt="Fron end Developer-Dibimbing"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/6-Banting Dunia IT-Dicoding.jpg"
                   alt="Dunia IT-Dicoding"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/8-Plning for IT-Smartpath.jpg"
                   alt="Plning for IT-Dicoding"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/9-Social Cyber Security-OrangSiber.jpg"
                   alt="9-Social Security-OrangSiber"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/10-Asisten Tutor-TKJ Club Makassar.jpg"
                   alt="10-Asisten Tutor-TKJ"
                 />
-              </div> </a
-            ><a href="">
+              </div> 
               <div class="colection-container">
                 <img
                   src="aset/colection/11-Junior Network Administrator-telkom.jpg"
                   alt="11-Junior Network Administrator-telkom"
                 />
-              </div> </a
-            ><a href="">
+              </div> 
               <div class="colection-container">
                 <img
                   src="aset/colection/12-Sertifikasi PKL-TKJ Club Makassar.jpg"
                   alt="PKL-TKJ Club Makassar"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/13.Fundamental C++ Dilesin.jpg"
                   alt="Fundamental c++ Dilesin"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/14. Fundamental React js MIKTI.jpeg"
                   alt="Fundamental Reactjs"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/15. algoritma c++ Dunia coding.png"
                   alt="algoritma c++ Dunia coding"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/16.Fundamental fron end web defelopment.png"
                   alt="fron end web defelopment"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/17.Fundamental python.png"
                   alt="Fundamental python"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/18. Fundamental Cyber Security coding studio.png"
                   alt="Fundamental Cyber Security"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/19. warkshop basic web defelopment.png"
                   alt="web defelopment"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/a-Junior Network Administrator-BNSP.jpg"
                   alt="13-Junior Network Administrator-BNSP"
                 />
               </div>
-            </a>
-            <a href="">
               <div class="colection-container">
                 <img
                   src="aset/colection/b-Sertifikasi UKK-SMK Negeri 1 Luwu Timur TKJ.jpg"
                   alt="UKK-SMK Negeri 1 Luwu Timur TKJ"
                 />
               </div>
-            </a>
+            <div class="modal" id="myModal">
+              <span class="modal-content" id="modalImg"></span>
+            </div>
           </aside>
         </article>
       </section>
       <section id="contact" class="contact">
         <div class="contact-detail">
-          <form action="">
+          <form action="" id="contactForm">
             <h1>Contact Us</h1>
             <div class="form-group">
               <div id="input-name" class="input-group">
-                <label for="">Name</label>
-                <input type="text" placeholder="input your name" />
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Input your name" required />
               </div>
               <div id="input-subject" class="input-group">
-                <label for="">Subject</label>
-                <input type="text" />
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
               </div>
               <div id="input-email" class="input-group">
-                <label for="">Email</label>
-                <input type="text" />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
               </div>
               <div id="input-phone" class="input-group">
-                <label for="">Phon Number</label>
-                <input type="text" />
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required />
               </div>
               <div id="input-message" class="input-group">
-                <label for="">Message</label>
-                <input type="text" />
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
               </div>
             </div>
-            <button class="btn">Submit</button>
+            <button type="submit" class="btn">Submit</button>
           </form>
         </div>
       </section>
@@ -337,5 +301,24 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+       document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch('/.netlify/functions/send-email', {
+      method: 'POST',
+      body: JSON.stringify(Object.fromEntries(formData)),
+    })
+      .then(response => response.json())
+      .then(data => {
+        alert(data.message);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  });
+    </script>
   </body>
 </html>
